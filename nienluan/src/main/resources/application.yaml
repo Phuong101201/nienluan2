@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        url: jdbc:sqlserver://localhost\MSI:1433;databaseName=DienThoai;characterEncoding=UTF-8;encrypt=true;trustServerCertificate=true;
+        username: sa
+        password: 123456
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                connection:
+                    characterEncoding: utf-8
+                    useUnicode: true
+                    CharSet: UTF-8
+server:
+    servlet:
+        encoding:
+            charset: UTF-8
